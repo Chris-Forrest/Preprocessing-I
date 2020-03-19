@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,6 +66,7 @@ table {
 	flex-direction:column;
 }
 
+
 h1, h2, h3, h4, h5, h6{
 	font-family:@hTextFontFamily;
 }
@@ -75,32 +77,77 @@ p{
 	font-family:@pFontFamily;
 }
 body{
-	border:1rem solid white;
+	border:3rem solid white;
+	font-size:62.5%;
 }
 html, body {
 	height: 100%;
+	
+}
+p{
+	font-size:1.2rem;
 }
 .links{
 	display:flex;
 	justify-content:flex-end;
 	margin-bottom:1%;
-	padding:1%;
-	align-items:;
-	
+	font-size:1.6rem;
+
+	 a{
+	padding-right:1.6rem;
+	}
 }
 header{
 	background-color:#737afa;
 	.name-title{
-		font-size:3em;
+		font-size:3rem;
 		margin:.5em 1em;
 	}/* h1 closses*/
 	.slogan{
-		font-size:5rem;
-		margin:5rem 1rem;
+		font-size:2rem;
+		margin-left:1.5em;
+		margin-bottom:1em;
 	}/* slogan closses*/
 	.tag-line{
-		font-size:5rem;
-		margin:5rem 1rem;
-	}
+		font-size:1rem;
+		margin:1em 1.5em;
+	}/* tag-line closses  */
+	
 }  /* header closses */
+ .silly{
+	background-color:grey;
+	font-size: 1.6rem;
+	width:12rem;
+	margin:6em 1.5em;
+	font:white;
+}/* closing for silly */
+
+.main-content{
+	display:flex;
+	width:47%;
+	h2{
+		font-size:2rem;
+	}/* h2 closing  */
+	.skills-section{
+		display:flex;
+		flex-direction:column;
+	}
+	h3{
+		font-size:1.8rem;
+	}/*  h3    closses*/
+	.skills-list{
+		display:flex;
+		flex-direction:column;
+	}
+	.work-experience{
+		display:flex;
+		flex-direction:row;
+	}
+}/* main content closses   */
+footer{
+	text-align:center;
+	margin:2% 1%;
+	background-color:grey;
+	color:white
+}
 

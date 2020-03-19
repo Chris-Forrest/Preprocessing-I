@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html,
+* html,
 body,
 div,
 span,
@@ -151,34 +151,81 @@ p {
   font-family: 'Josefin Sans', sans-serif;
 }
 body {
-  border: 1rem solid white;
+  border: 3rem solid white;
+  font-size: 62.5%;
 }
 html,
 body {
   height: 100%;
 }
+p {
+  font-size: 1.2rem;
+}
 .links {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 1%;
-  padding: 1%;
-  align-items: ;
+  font-size: 1.6rem;
+}
+.links a {
+  padding-right: 1.6rem;
 }
 header {
   background-color: #737afa;
   /* h1 closses*/
   /* slogan closses*/
+  /* tag-line closses  */
 }
 header .name-title {
-  font-size: 3em;
+  font-size: 3rem;
   margin: 0.5em 1em;
 }
 header .slogan {
-  font-size: 5rem;
-  margin: 5rem 1rem;
+  font-size: 2rem;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
 }
 header .tag-line {
-  font-size: 5rem;
-  margin: 5rem 1rem;
+  font-size: 1rem;
+  margin: 1em 1.5em;
 }
 /* header closses */
+.silly {
+  background-color: grey;
+  font-size: 1.6rem;
+  width: 12rem;
+  margin: 6em 1.5em;
+  font: white;
+}
+/* closing for silly */
+.main-content {
+  display: flex;
+  width: 47%;
+  /* h2 closing  */
+  /*  h3    closses*/
+}
+.main-content h2 {
+  font-size: 2rem;
+}
+.main-content .skills-section {
+  display: flex;
+  flex-direction: column;
+}
+.main-content h3 {
+  font-size: 1.8rem;
+}
+.main-content .skills-list {
+  display: flex;
+  flex-direction: column;
+}
+.main-content .work-experience {
+  display: flex;
+  flex-direction: row;
+}
+/* main content closses   */
+footer {
+  text-align: center;
+  margin: 2% 1%;
+  background-color: grey;
+  color: white;
+}
