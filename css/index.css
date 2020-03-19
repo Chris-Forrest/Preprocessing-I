@@ -136,6 +136,11 @@ table {
   display: flex;
   flex-direction: column;
 }
+.experienceSection {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
 h1,
 h2,
 h3,
@@ -194,8 +199,8 @@ header .tag-line {
   background-color: grey;
   font-size: 1.6rem;
   width: 12rem;
-  margin: 6em 1.5em;
-  font: white;
+  margin-right: 3em;
+  color: white;
 }
 /* closing for silly */
 .main-content {
@@ -203,6 +208,8 @@ header .tag-line {
   width: 47%;
   /* h2 closing  */
   /*  h3    closses*/
+  /*  skills-list  closes */
+  /* work experience closses  */
 }
 .main-content h2 {
   font-size: 2rem;
@@ -218,11 +225,50 @@ header .tag-line {
   display: flex;
   flex-direction: column;
 }
+.main-content h4 {
+  font-size: 1.6rem;
+  border: 1px solid grey;
+  padding: 2%;
+}
 .main-content .work-experience {
   display: flex;
   flex-direction: row;
 }
 /* main content closses   */
+.work-experience {
+  /*  title-line closses   */
+  /* h3 closses  */
+  /*  h4  closes*/
+  /***** job1 closes   ****/
+}
+.work-experience .title-line {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.work-experience h3 {
+  font-size: 1.8rem;
+}
+.work-experience h4 {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.work-experience .job1 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.work-experience .job2 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.work-experience .job3 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+/** work-experience closses  */
 footer {
   text-align: center;
   margin: 2% 1%;

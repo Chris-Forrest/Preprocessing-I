@@ -65,6 +65,12 @@ table {
 	display:flex;
 	flex-direction:column;
 }
+.experienceSection{
+	display:flex;
+	justify-content:space-between;
+	width:60%;
+
+}
 
 
 h1, h2, h3, h4, h5, h6{
@@ -118,8 +124,8 @@ header{
 	background-color:grey;
 	font-size: 1.6rem;
 	width:12rem;
-	margin:6em 1.5em;
-	font:white;
+	margin-right:3em;
+	color:white;
 }/* closing for silly */
 
 .main-content{
@@ -131,19 +137,47 @@ header{
 	.skills-section{
 		display:flex;
 		flex-direction:column;
-	}
+		}
 	h3{
 		font-size:1.8rem;
 	}/*  h3    closses*/
 	.skills-list{
 		display:flex;
 		flex-direction:column;
+		
+	}/*  skills-list  closes */
+	h4{
+		font-size:1.6rem;
+		border: 1px solid grey;
+		padding:2%;
 	}
 	.work-experience{
 		display:flex;
 		flex-direction:row;
-	}
+	}/* work experience closses  */
 }/* main content closses   */
+.work-experience{
+	.title-line{
+		.experienceSection();
+	}/*  title-line closses   */
+	h3{
+		font-size:1.8rem;
+		
+	}/* h3 closses  */
+	h4{
+		font-weight:bold;
+		font-size:1.6rem;
+	}/*  h4  closes*/ 
+	.job1{
+		.experienceSection();
+	}/***** job1 closes   ****/
+	.job2{
+		.experienceSection();
+	}
+	.job3{
+		.experienceSection();
+	}
+}/** work-experience closses  */
 footer{
 	text-align:center;
 	margin:2% 1%;
