@@ -131,16 +131,7 @@ table {
   box-sizing: border-box;
 }
 /************    variables      *************/
-/***********   mixin      ********************/
-.headerBox {
-  display: flex;
-  flex-direction: column;
-}
-.experienceSection {
-  display: flex;
-  justify-content: space-between;
-  width: 60%;
-}
+/***********   mixins      ********************/
 h1,
 h2,
 h3,
@@ -156,7 +147,7 @@ p {
   font-family: 'Josefin Sans', sans-serif;
 }
 body {
-  border: 3rem solid white;
+  border: 3rem solid color white;
   font-size: 62.5%;
 }
 html,
@@ -166,44 +157,64 @@ body {
 p {
   font-size: 1.2rem;
 }
-.links {
+.main-container {
+  /* header closses */
+  /* closing for silly */
+  /* closes @media ******/
+  /* main content closses   */
+  /** @media closes ****/
+  /** work-experience closses  */
+  /** @media closes  ***/
+  /**** contact stuff closes ******/
+  /*** footer closes ******/
+}
+.main-container .links {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 1%;
   font-size: 1.6rem;
 }
-.links a {
+.main-container .links a {
   padding-right: 1.6rem;
 }
-header {
+.main-container header {
   background-color: #737afa;
   /* h1 closses*/
   /* slogan closses*/
   /* tag-line closses  */
 }
-header .name-title {
+.main-container header .name-title {
   font-size: 3rem;
   margin: 0.5em 1em;
 }
-header .slogan {
+.main-container header .slogan {
   font-size: 2rem;
   margin-left: 1.5em;
   margin-bottom: 1em;
 }
-header .tag-line {
+.main-container header .tag-line {
   font-size: 1rem;
   margin: 1em 1.5em;
 }
-/* header closses */
-.silly {
+.main-container .silly {
   background-color: grey;
   font-size: 1.6rem;
   width: 12rem;
   margin-right: 3em;
-  color: white;
+  color: color white;
 }
-/* closing for silly */
-.main-content {
+@media (max-width: 500px) {
+  .main-container {
+    /** closes header   ****/
+  }
+  .main-container header {
+    /** closes image-top  **/
+  }
+  .main-container header .image-top {
+    display: none;
+  }
+}
+.main-container .main-content {
   display: flex;
   width: 47%;
   /* h2 closing  */
@@ -211,67 +222,93 @@ header .tag-line {
   /*  skills-list  closes */
   /* work experience closses  */
 }
-.main-content h2 {
+.main-container .main-content h2 {
   font-size: 2rem;
 }
-.main-content .skills-section {
+.main-container .main-content .skills-section {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
-.main-content h3 {
+.main-container .main-content h3 {
   font-size: 1.8rem;
 }
-.main-content .skills-list {
+.main-container .main-content .skills-list {
   display: flex;
   flex-direction: column;
 }
-.main-content h4 {
+.main-container .main-content h4 {
   font-size: 1.6rem;
   border: 1px solid grey;
   padding: 2%;
 }
-.main-content .work-experience {
+.main-container .main-content .work-experience {
   display: flex;
   flex-direction: row;
 }
-/* main content closses   */
-.work-experience {
+@media (max-width: 500px) {
+  .main-container {
+    /* main-content closes  ***/
+  }
+  .main-container .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main-container .work-experience {
   /*  title-line closses   */
   /* h3 closses  */
   /*  h4  closes*/
   /***** job1 closes   ****/
+  /***** job 2 closes *****/
+  /***** job 3 closes ******/
 }
-.work-experience .title-line {
+.main-container .work-experience .title-line {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 65%;
 }
-.work-experience h3 {
+.main-container .work-experience h3 {
   font-size: 1.8rem;
 }
-.work-experience h4 {
+.main-container .work-experience h4 {
   font-weight: bold;
   font-size: 1.6rem;
 }
-.work-experience .job1 {
+.main-container .work-experience .job1 {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 65%;
 }
-.work-experience .job2 {
+.main-container .work-experience .job2 {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 65%;
 }
-.work-experience .job3 {
+.main-container .work-experience .job3 {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 65%;
 }
-/** work-experience closses  */
-footer {
+@media (max-width: 500px) {
+  .main-container {
+    /* work-experience closes  ***/
+  }
+  .main-container .work-experience {
+    display: none;
+  }
+}
+.main-container .contact-stuff {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  font-size: 1.2rem;
+  margin: 1%;
+}
+.main-container footer {
   text-align: center;
   margin: 2% 1%;
   background-color: grey;
   color: white;
 }
+/****** main content closes **********/

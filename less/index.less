@@ -58,18 +58,21 @@ table {
 @hTextFontFamily:'Muli', sans-serif;
 @linksFont:'Slabo 27px', serif;
 @pFontFamily:'Josefin Sans', sans-serif;
+@whiteFont:color white;
 
-/***********   mixin      ********************/
+/***********   mixins      ********************/
 
-.headerBox{
+.conStuffBox(){
 	display:flex;
 	flex-direction:column;
+	padding:3%;
+	font-size:1.2rem;
+	margin:1%;
 }
-.experienceSection{
+.experienceSection(){
 	display:flex;
 	justify-content:space-between;
-	width:60%;
-
+	width:65%;
 }
 
 
@@ -83,7 +86,7 @@ p{
 	font-family:@pFontFamily;
 }
 body{
-	border:3rem solid white;
+	border:3rem solid @whiteFont;
 	font-size:62.5%;
 }
 html, body {
@@ -93,6 +96,9 @@ html, body {
 p{
 	font-size:1.2rem;
 }
+.main-container{
+
+
 .links{
 	display:flex;
 	justify-content:flex-end;
@@ -125,8 +131,16 @@ header{
 	font-size: 1.6rem;
 	width:12rem;
 	margin-right:3em;
-	color:white;
+	color:@whiteFont;
 }/* closing for silly */
+@media( max-width: 500px ){
+	header{
+		.image-top{
+		display:none;
+	  }/** closes image-top  **/
+
+	}/** closes header   ****/
+}/* closes @media ******/
 
 .main-content{
 	display:flex;
@@ -137,6 +151,7 @@ header{
 	.skills-section{
 		display:flex;
 		flex-direction:column;
+		width:50%;
 		}
 	h3{
 		font-size:1.8rem;
@@ -156,6 +171,14 @@ header{
 		flex-direction:row;
 	}/* work experience closses  */
 }/* main content closses   */
+
+@media( max-width: 500px ){
+	.main-content{
+		display:flex;
+		flex-direction: column;
+	}/* main-content closes  ***/
+}/** @media closes ****/
+
 .work-experience{
 	.title-line{
 		.experienceSection();
@@ -173,15 +196,26 @@ header{
 	}/***** job1 closes   ****/
 	.job2{
 		.experienceSection();
-	}
+	}/***** job 2 closes *****/
 	.job3{
 		.experienceSection();
-	}
+	}/***** job 3 closes ******/
 }/** work-experience closses  */
+@media( max-width: 500px ){
+	.work-experience{
+		display:none;
+	}/* work-experience closes  ***/
+}/** @media closes  ***/
+
+.contact-stuff{
+	.conStuffBox();
+}/**** contact stuff closes ******/
 footer{
 	text-align:center;
 	margin:2% 1%;
 	background-color:grey;
 	color:white
-}
+}/*** footer closes ******/
 
+
+}/****** main content closes **********/
