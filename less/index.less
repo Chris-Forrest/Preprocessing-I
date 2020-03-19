@@ -3,6 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+* 
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,8 +53,169 @@ table {
 * {
     box-sizing: border-box;
 }
+/************    variables      *************/
 
-html, body {
-    height: 100%;
+@hTextFontFamily:'Muli', sans-serif;
+@linksFont:'Slabo 27px', serif;
+@pFontFamily:'Josefin Sans', sans-serif;
+@whiteFont:color white;
+
+/***********   mixins      ********************/
+
+.conStuffBox(){
+	display:flex;
+	flex-direction:column;
+	padding:3%;
+	font-size:1.2rem;
+	margin:1%;
+}
+.experienceSection(){
+	display:flex;
+	justify-content:space-between;
+	width:65%;
 }
 
+
+h1, h2, h3, h4, h5, h6{
+	font-family:@hTextFontFamily;
+}
+nav{
+	font-family:@linksFont;
+}
+p{
+	font-family:@pFontFamily;
+}
+body{
+	border:3rem solid @whiteFont;
+	font-size:62.5%;
+}
+html, body {
+	height: 100%;
+	
+}
+p{
+	font-size:1.2rem;
+}
+.main-container{
+
+
+.links{
+	display:flex;
+	justify-content:flex-end;
+	margin-bottom:1%;
+	font-size:1.6rem;
+
+	 a{
+	padding-right:1.6rem;
+	}
+}
+header{
+	background-color:#737afa;
+	.name-title{
+		font-size:3rem;
+		margin:.5em 1em;
+	}/* h1 closses*/
+	.slogan{
+		font-size:2rem;
+		margin-left:1.5em;
+		margin-bottom:1em;
+	}/* slogan closses*/
+	.tag-line{
+		font-size:1rem;
+		margin:1em 1.5em;
+	}/* tag-line closses  */
+	
+}  /* header closses */
+ .silly{
+	background-color:grey;
+	font-size: 1.6rem;
+	width:12rem;
+	margin-right:3em;
+	color:@whiteFont;
+}/* closing for silly */
+@media( max-width: 500px ){
+	header{
+		.image-top{
+		display:none;
+	  }/** closes image-top  **/
+
+	}/** closes header   ****/
+}/* closes @media ******/
+
+.main-content{
+	display:flex;
+	width:47%;
+	h2{
+		font-size:2rem;
+	}/* h2 closing  */
+	.skills-section{
+		display:flex;
+		flex-direction:column;
+		width:50%;
+		}
+	h3{
+		font-size:1.8rem;
+	}/*  h3    closses*/
+	.skills-list{
+		display:flex;
+		flex-direction:column;
+		
+	}/*  skills-list  closes */
+	h4{
+		font-size:1.6rem;
+		border: 1px solid grey;
+		padding:2%;
+	}
+	.work-experience{
+		display:flex;
+		flex-direction:row;
+	}/* work experience closses  */
+}/* main content closses   */
+
+@media( max-width: 500px ){
+	.main-content{
+		display:flex;
+		flex-direction: column;
+	}/* main-content closes  ***/
+}/** @media closes ****/
+
+.work-experience{
+	.title-line{
+		.experienceSection();
+	}/*  title-line closses   */
+	h3{
+		font-size:1.8rem;
+		
+	}/* h3 closses  */
+	h4{
+		font-weight:bold;
+		font-size:1.6rem;
+	}/*  h4  closes*/ 
+	.job1{
+		.experienceSection();
+	}/***** job1 closes   ****/
+	.job2{
+		.experienceSection();
+	}/***** job 2 closes *****/
+	.job3{
+		.experienceSection();
+	}/***** job 3 closes ******/
+}/** work-experience closses  */
+@media( max-width: 500px ){
+	.work-experience{
+		display:none;
+	}/* work-experience closes  ***/
+}/** @media closes  ***/
+
+.contact-stuff{
+	.conStuffBox();
+}/**** contact stuff closes ******/
+footer{
+	text-align:center;
+	margin:2% 1%;
+	background-color:grey;
+	color:white
+}/*** footer closes ******/
+
+
+}/****** main content closes **********/

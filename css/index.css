@@ -1,1 +1,314 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/************    variables      *************/
+/***********   mixins      ********************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Muli', sans-serif;
+}
+nav {
+  font-family: 'Slabo 27px', serif;
+}
+p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+body {
+  border: 3rem solid color white;
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+p {
+  font-size: 1.2rem;
+}
+.main-container {
+  /* header closses */
+  /* closing for silly */
+  /* closes @media ******/
+  /* main content closses   */
+  /** @media closes ****/
+  /** work-experience closses  */
+  /** @media closes  ***/
+  /**** contact stuff closes ******/
+  /*** footer closes ******/
+}
+.main-container .links {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1%;
+  font-size: 1.6rem;
+}
+.main-container .links a {
+  padding-right: 1.6rem;
+}
+.main-container header {
+  background-color: #737afa;
+  /* h1 closses*/
+  /* slogan closses*/
+  /* tag-line closses  */
+}
+.main-container header .name-title {
+  font-size: 3rem;
+  margin: 0.5em 1em;
+}
+.main-container header .slogan {
+  font-size: 2rem;
+  margin-left: 1.5em;
+  margin-bottom: 1em;
+}
+.main-container header .tag-line {
+  font-size: 1rem;
+  margin: 1em 1.5em;
+}
+.main-container .silly {
+  background-color: grey;
+  font-size: 1.6rem;
+  width: 12rem;
+  margin-right: 3em;
+  color: color white;
+}
+@media (max-width: 500px) {
+  .main-container {
+    /** closes header   ****/
+  }
+  .main-container header {
+    /** closes image-top  **/
+  }
+  .main-container header .image-top {
+    display: none;
+  }
+}
+.main-container .main-content {
+  display: flex;
+  width: 47%;
+  /* h2 closing  */
+  /*  h3    closses*/
+  /*  skills-list  closes */
+  /* work experience closses  */
+}
+.main-container .main-content h2 {
+  font-size: 2rem;
+}
+.main-container .main-content .skills-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.main-container .main-content h3 {
+  font-size: 1.8rem;
+}
+.main-container .main-content .skills-list {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .main-content h4 {
+  font-size: 1.6rem;
+  border: 1px solid grey;
+  padding: 2%;
+}
+.main-container .main-content .work-experience {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  .main-container {
+    /* main-content closes  ***/
+  }
+  .main-container .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main-container .work-experience {
+  /*  title-line closses   */
+  /* h3 closses  */
+  /*  h4  closes*/
+  /***** job1 closes   ****/
+  /***** job 2 closes *****/
+  /***** job 3 closes ******/
+}
+.main-container .work-experience .title-line {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+.main-container .work-experience h3 {
+  font-size: 1.8rem;
+}
+.main-container .work-experience h4 {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.main-container .work-experience .job1 {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+.main-container .work-experience .job2 {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+.main-container .work-experience .job3 {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+@media (max-width: 500px) {
+  .main-container {
+    /* work-experience closes  ***/
+  }
+  .main-container .work-experience {
+    display: none;
+  }
+}
+.main-container .contact-stuff {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  font-size: 1.2rem;
+  margin: 1%;
+}
+.main-container footer {
+  text-align: center;
+  margin: 2% 1%;
+  background-color: grey;
+  color: white;
+}
+/****** main content closes **********/
