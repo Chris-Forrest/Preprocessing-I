@@ -52,10 +52,55 @@ table {
 * {
     box-sizing: border-box;
 }
+/************    variables      *************/
 
+@hTextFontFamily:'Muli', sans-serif;
+@linksFont:'Slabo 27px', serif;
+@pFontFamily:'Josefin Sans', sans-serif;
+
+/***********   mixin      ********************/
+
+.headerBox{
+	display:flex;
+	flex-direction:column;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family:@hTextFontFamily;
+}
+nav{
+	font-family:@linksFont;
+}
+p{
+	font-family:@pFontFamily;
+}
+body{
+	border:1rem solid white;
+}
 html, body {
 	height: 100%;
-	
+}
+.links{
+	display:flex;
+	justify-content:flex-end;
+	margin-bottom:1%;
+	padding:1%;
+	align-items:;
 	
 }
+header{
+	background-color:#737afa;
+	.name-title{
+		font-size:3em;
+		margin:.5em 1em;
+	}/* h1 closses*/
+	.slogan{
+		font-size:5rem;
+		margin:5rem 1rem;
+	}/* slogan closses*/
+	.tag-line{
+		font-size:5rem;
+		margin:5rem 1rem;
+	}
+}  /* header closses */
 

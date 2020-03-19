@@ -130,7 +130,55 @@ table {
 * {
   box-sizing: border-box;
 }
+/************    variables      *************/
+/***********   mixin      ********************/
+.headerBox {
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Muli', sans-serif;
+}
+nav {
+  font-family: 'Slabo 27px', serif;
+}
+p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+body {
+  border: 1rem solid white;
+}
 html,
 body {
   height: 100%;
 }
+.links {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1%;
+  padding: 1%;
+  align-items: ;
+}
+header {
+  background-color: #737afa;
+  /* h1 closses*/
+  /* slogan closses*/
+}
+header .name-title {
+  font-size: 3em;
+  margin: 0.5em 1em;
+}
+header .slogan {
+  font-size: 5rem;
+  margin: 5rem 1rem;
+}
+header .tag-line {
+  font-size: 5rem;
+  margin: 5rem 1rem;
+}
+/* header closses */
