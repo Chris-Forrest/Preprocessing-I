@@ -4,7 +4,9 @@
    License: none (public domain)
 */
 * 
-
+a {
+	text-decoration: none;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,6 +34,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-size:62.5%;
+	
 }
 ol, ul {
 	list-style: none;
@@ -53,28 +57,42 @@ table {
 * {
     box-sizing: border-box;
 }
+
 /************    variables      *************/
 
 @hTextFontFamily:'Muli', sans-serif;
 @linksFont:'Slabo 27px', serif;
 @pFontFamily:'Josefin Sans', sans-serif;
-@whiteFont:color white;
+@whiteFont:  white;
 
 /***********   mixins      ********************/
 
 .conStuffBox(){
 	display:flex;
 	flex-direction:column;
-	padding:3%;
+	//padding:3%;
 	font-size:1.2rem;
 	margin:1%;
+	
 }
-.experienceSection(){
+.experienceSectionTitle(){
 	display:flex;
 	justify-content:space-between;
-	width:65%;
+	width:100%;
+	border:1px solid grey;
+	padding-top:2% ;
+	padding-bottom:2%;	
+}
+.experienceSectionJobs(){
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	border:1px solid grey;
+	padding-top:2% ;
+	padding-bottom:2%;	
 }
 
+/*************mixins end ******************/
 
 h1, h2, h3, h4, h5, h6{
 	font-family:@hTextFontFamily;
@@ -85,10 +103,7 @@ nav{
 p{
 	font-family:@pFontFamily;
 }
-body{
-	border:3rem solid @whiteFont;
-	font-size:62.5%;
-}
+
 html, body {
 	height: 100%;
 	
@@ -97,41 +112,51 @@ p{
 	font-size:1.2rem;
 }
 .main-container{
-
+	border:3rem solid white;
 
 .links{
 	display:flex;
 	justify-content:flex-end;
 	margin-bottom:1%;
 	font-size:1.6rem;
+	
 
 	 a{
 	padding-right:1.6rem;
+	color:black;
 	}
 }
 header{
 	background-color:#737afa;
+	padding-left: 2%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	.name-title{
 		font-size:3rem;
-		margin:.5em 1em;
+		margin:0.5em 0.2em;
 	}/* h1 closses*/
 	.slogan{
 		font-size:2rem;
-		margin-left:1.5em;
+		margin-left:0.5em;
 		margin-bottom:1em;
 	}/* slogan closses*/
 	.tag-line{
 		font-size:1rem;
-		margin:1em 1.5em;
+		margin:1em 0.5em;
 	}/* tag-line closses  */
 	
 }  /* header closses */
  .silly{
 	background-color:grey;
 	font-size: 1.6rem;
-	width:12rem;
-	margin-right:3em;
-	color:@whiteFont;
+	width:10rem;
+	height:2.5rem;
+	padding-left: 1rem;
+	padding-top:0.7rem;
+	color: @whiteFont;
+	border-radius: 10%;
+	margin-left: 1%;
+	margin-bottom: 3%;
 }/* closing for silly */
 @media( max-width: 500px ){
 	header{
@@ -144,44 +169,50 @@ header{
 
 .main-content{
 	display:flex;
-	width:47%;
+	width:100%;
 	h2{
 		font-size:2rem;
 	}/* h2 closing  */
-	.skills-section{
-		display:flex;
-		flex-direction:column;
-		width:50%;
+	.aboutdiv{
+		width:45%;
+		margin-right:2%;
+	}
+	.skill-section{
+		//display:flex;
+		//flex-direction:column;
+		width:49%;
+		//background-color:red;
 		}
 	h3{
 		font-size:1.8rem;
 	}/*  h3    closses*/
-	.skills-list{
-		display:flex;
-		flex-direction:column;
-		
-	}/*  skills-list  closes */
+	
 	h4{
 		font-size:1.6rem;
 		border: 1px solid grey;
 		padding:2%;
+		//width:49%;
 	}
 	.work-experience{
 		display:flex;
 		flex-direction:row;
 	}/* work experience closses  */
 }/* main content closses   */
-
 @media( max-width: 500px ){
 	.main-content{
 		display:flex;
 		flex-direction: column;
+		justify-content:center;
+		padding-left:30%;
 	}/* main-content closes  ***/
 }/** @media closes ****/
 
+
 .work-experience{
 	.title-line{
-		.experienceSection();
+		.experienceSectionTitle();
+		padding-left:1.6rem;
+		padding-right:1.6rem;
 	}/*  title-line closses   */
 	h3{
 		font-size:1.8rem;
@@ -191,30 +222,68 @@ header{
 		font-weight:bold;
 		font-size:1.6rem;
 	}/*  h4  closes*/ 
+	
+	.titleTitle{
+		padding-right: 13rem;
+		
+	}
 	.job1{
-		.experienceSection();
-	}/***** job1 closes   ****/
+		.experienceSectionJobs();
+		background-color:whitesmoke;
+		padding-left:2rem;
+		}/***** job1 closes   ****/
+		.co1{
+			padding-left: 2.8rem;
+		}
+		.title1{
+			padding-left: 2rem;
+		}
+	.tech1{
+		padding-right:6.4rem;
+	}	
 	.job2{
-		.experienceSection();
+		.experienceSectionJobs();
+		padding-left:2rem;
 	}/***** job 2 closes *****/
+	.tech2{
+		padding-right: 3.8rem;
+	}
 	.job3{
-		.experienceSection();
+		.experienceSectionJobs();
+		background-color: whitesmoke;
+		padding-left:2rem;
 	}/***** job 3 closes ******/
+	.tech3{
+		padding-right:4.7rem;
+	}
 }/** work-experience closses  */
 @media( max-width: 500px ){
 	.work-experience{
 		display:none;
 	}/* work-experience closes  ***/
 }/** @media closes  ***/
-
+margin-left: 2rem;
 .contact-stuff{
 	.conStuffBox();
+	h5{
+		font-size:1.6rem;
+		padding:1%;
+	}/*********  h5 closses   *********************/
+	.phone, .mail, .email {
+		padding: 1%;
+	}
 }/**** contact stuff closes ******/
+@media( max-width: 500px){
+	.contact-stuff{
+		padding-left: 20%;
+	}
+}
 footer{
 	text-align:center;
 	margin:2% 1%;
 	background-color:grey;
-	color:white
+	color:white;
+	padding:2rem;
 }/*** footer closes ******/
 
 
